@@ -16,7 +16,7 @@ Not even really example scripts
 ### Usage:
 
 To set theme.css as the current dock theme
-<table><tr><td>$ eOSdock-themeswitcher.sh theme.css</td></tr></table>
+<table><tr><td>$ eOSdock-themeswitcher.sh ./themes/theme.css</td></tr></table>
 
 
 No argument, to revert to default
