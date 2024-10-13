@@ -1,0 +1,120 @@
+#!/bin/bash
+# Manage dock themes
+
+#========================
+#   	VARIABLES		=
+#========================
+
+IMPORTFILE="Docktheme.css"
+
+
+
+#========================
+#	   	FUNCTIONS   	=
+#========================
+
+
+# add an import to gtk.css so it can apply stuff
+function enable_theme()
+{
+	if ! grep -q "@import \"Docktheme.css\";" ~/.config/gtk-4.0/gtk.css 
+	then
+		echo "import not present. Adding."
+		#echo '/* Import line for the eOS dock theme switcher. Comment for vanilla. */' >> ~/.config/gtk-4.0/gtk.css	
+		#echo "@import \"Docktheme.css\";" >> ~/.config/gtk-4.0/gtk.css	
+	
+	fi
+	#killall io.elementary.dock
+}
+
+
+
+
+# Remove import in gtk config
+# Remove file to leave no leftover
+# dock restart
+function disable_theme()
+{
+	cat ~/.config/gtk-4.0/gtk.css | grep -v  "@import \"Docktheme.css\";" > ~/.config/gtk-4.0/gtk.css
+	rm -f "~/.config/gtk-4.0/$IMPORTFILE"
+	#killall io.elementary.dock
+}
+
+
+
+#========================
+#   	EXECUTION   	=
+#========================
+
+function GUI_Switcher() {}
+if [ $(which zenity) ]
+then
+	echo "Zenity detected"
+else
+	pkexec apt install zenity -y
+fi
+
+
+
+
+
+
+# Build list of themes
+for theme in *.css
+do
+
+	
+	if grep -q "/\*CURRENT: ${theme%.*}\*/" ~/.config/gtk-4.0/$IMPORTFILE 
+	then
+		themelist+=('TRUE' "${theme%.*}")
+	else
+		themelist+=('FALSE' "${theme%.*}")
+	fi
+
+
+done
+
+
+# Add default
+# If there is no import line, then default is set as selected (current one)
+if ! grep -q "@import \"Docktheme.css\";" ~/.config/gtk-4.0/gtk.css 
+then
+	themelist+=('TRUE' 'Default')
+else
+	themelist+=('FALSE' 'Default')
+fi
+
+
+
+
+# Give choice
+choice="$(zenity --list --radiolist \
+	--title 'choose your fighter' \
+	--column 'Select' --column 'Theme' \
+	${themelist[@]})"
+echo "$choice"
+
+
+
+if [[ -z "$choice" ]] 					# Cancel or close
+then
+	echo "No choice. Exit."
+	exit
+
+elif [[ "$choice" == "Default" ]]		# Default
+then
+
+	disable_theme
+
+else									# Choice
+
+
+	#echo "/\*CURRENT: ${choice}\*/" > ~/.config/gtk-4.0/$IMPORTFILE
+	#echo >> ~/.config/gtk-4.0/$IMPORTFILE
+	#cat "${choice}.css"  #>> "~/.config/gtk-4.0/$IMPORTFILE"
+	enable_theme
+
+fi
+
+
+
