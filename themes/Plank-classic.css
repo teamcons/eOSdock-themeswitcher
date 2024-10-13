@@ -4,7 +4,7 @@
  */
 
 dock {
-    background: rgb(139, 0, 139);
+    background: alpha(@bg_color, 0.6);
     border-radius: 9px;
     box-shadow:
         inset 0 -1px 0 0 alpha(@highlight_color, 0.1),
@@ -39,7 +39,7 @@ launcher progressbar trough {
 }
 
 launcher progressbar progress {
-    background: rgb(0, 255, 255);
+    background: white;
     border: none;
     border-radius: 99px;
     box-shadow: none;
@@ -49,7 +49,7 @@ launcher progressbar progress {
 }
 
 .running-indicator {
-    color: rgb(255, 255, 0);
+    color: @selected_fg_color;
     -gtk-icon-size: 9px;
     margin-top: -3px;
 }

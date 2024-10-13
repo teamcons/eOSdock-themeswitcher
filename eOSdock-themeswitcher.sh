@@ -62,7 +62,7 @@ function disable_theme()
 if [[ -f "$*" ]]		# Its a file
 then
 
-
+    echo "setting $*"
 	echo "/* CURRENT: $* */" 	> ~/.config/gtk-4.0/$IMPORTFILE
 	echo "" 					>> ~/.config/gtk-4.0/$IMPORTFILE
 	cat "$*"  					>> ~/.config/gtk-4.0/$IMPORTFILE
