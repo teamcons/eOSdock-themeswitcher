@@ -4,10 +4,10 @@
  */
 
 dock {
-    background: alpha(@bg_color, 1);
+    background: alpha(@bg_color, 0.6);
 
     background-size: auto 20%;
-
+    backdrop-filter: blur(20px);
     
     border-radius: 9px;
     box-shadow:
