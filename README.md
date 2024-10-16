@@ -19,18 +19,14 @@ Not even really example scripts
 
 To set theme.css as the current dock theme
 ```bash
-$ eOSdock-themeswitcher.sh ./themes/theme.css
+$ eOSdock-themeswitcher.sh ./themes/theme.css && killall io.elementary.dock
 ```
 
 No argument, to revert to default
 ```bash
-$ eOSdock-themeswitcher.sh</td></tr></table>
+$ eOSdock-themeswitcher.sh && killall io.elementary.dock
 ```
 
-login-logout for change to take effect, or do
-```bash
-$ killall io.elementary.dock</td></tr></table>
-```
 
 The file doesnt overwrite gtk.css, and reverts to default without leaving anything else.<br>
 This is per user, and does not require sudo
