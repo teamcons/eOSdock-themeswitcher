@@ -47,6 +47,10 @@ Please if you have a cool theme send it to me
         <td>Whatever</td>
       <td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Whatever.png"" />
 
+  </table>
+
   <table align="center" border="none">
         <td>The 2000s</td>
       <td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/The 2000s.png"" />
+      
+        </table>
