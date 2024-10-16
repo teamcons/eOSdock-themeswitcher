@@ -37,3 +37,16 @@ Application.css is the default. It is taken from the source code itself:
 https://github.com/elementary/dock/blob/main/data/Application.css
 
 Please if you have a cool theme send it to me
+
+
+### THEMES
+
+
+
+  <table align="center" border="none">
+        <td>Whatever</td>
+      <td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Whatever.png"" />
+
+  <table align="center" border="none">
+        <td>The 2000s</td>
+      <td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/The 2000s.png"" />
