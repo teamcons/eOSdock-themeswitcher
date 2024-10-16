@@ -44,10 +44,10 @@ Please if you have a cool theme send it to me
 
 
 
-  <table align="center" border="none">
-        <td>The 2000s</td>
-      <td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/The 2000s.png"" />
-              <td>Whatever</td>
-      <td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Whatever.png"" />
+<td>The 2000s</td>
+<td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/The 2000s.png"" />
+      
+      
+<td>Whatever</td>
+<td><img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Whatever.png"" />
 
-        </table>
