@@ -61,7 +61,7 @@ function disable_theme()
 #========================
 
 
-if [[ -f "$*" ]]		# Its a file
+if [[ -f "$*" ]] && [[ "$*" != "Default" ]]		# Its a file and not "Default" (reserve Default, just in case)
 then
 
     echo "setting $*"
@@ -71,9 +71,12 @@ then
 	enable_theme
 
 
-
 else
 	disable_theme
+	
 
 
 fi
+
+
+echo "you may want to log anew or run killall io.elementary.dock to see the changes take effect"
