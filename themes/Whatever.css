@@ -11,6 +11,7 @@ dock {
     width: 500px;
     border: groove 1px #CCC;
     border-bottom: none;
+    border-right: none;
 }
 
 launcher {
