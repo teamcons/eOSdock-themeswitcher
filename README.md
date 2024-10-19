@@ -41,17 +41,18 @@ Please if you have a cool theme send it to me
 
 ### THEMES
 
-Solid background, accent color in dock. Everything else untouched.
+Stellas Tweaks</br>
+Solid background, accent color in dock. Everything else untouched.</br>
 <img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Stellas%20Tweaks.png"/>
 
 
 
-The 2000s
-An attempt at funky 3D
+The 2000s</br>
+An attempt at funky 3D</br>
 
 <img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/The%202000s.png"/>
 
-Whatever
-I dont know. It looks neat.
+Whatever</br>
+I dont know. It looks neat.</br>
 <img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Whatever.png"/>
 
