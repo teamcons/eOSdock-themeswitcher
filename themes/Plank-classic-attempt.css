@@ -18,7 +18,11 @@ dock {
 
 
 .running-indicator {
-    color: @accent_color;
+    color: rgba(0,0,0,0);
     -gtk-icon-size:12px;
-    margin-top: -3px;
+    margin-top: -6px;
+    
+    border-bottom: solid 3px @accent_color;
+    
+    
 }

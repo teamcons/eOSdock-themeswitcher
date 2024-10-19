@@ -1,0 +1,12 @@
+/*
+ * SPDX-License-Identifier: GPL-3.0
+ * SPDX-FileCopyrightText: 2023 elementary, Inc. (https://elementary.io)
+ */
+
+dock {
+    background: alpha(@bg_color, 1);
+}
+
+.running-indicator {
+    color: @accent_color;
+}
