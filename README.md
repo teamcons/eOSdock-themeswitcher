@@ -42,7 +42,7 @@ Please if you have a cool theme send it to me
 ### THEMES
 
 Stellas Tweaks</br>
-Solid background, accent color in dock. Everything else untouched.</br>
+Shadows behind icons. Accent color in running indicator. Icon up on hover</br>
 <img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Stellas%20Tweaks.png"/>
 
 
