@@ -6,7 +6,7 @@
 To use with eOS new dock<br>
 THE SCRIPT WORKS; But there is no officially finished theme yet !!!<br>
 <br>
-I am waiting for a few changes, then will be able to offer the following themes :
+I am waiting for a few changes, then will be able to offer the following themes:<br>
 -Classic: The traditional classic theme.<br>
 -The 2000s: A very frutiger aero spin with all the 3D<br>
 -Aqua: A old nostalgic MacOS with zoom/magnification<br>
