@@ -13,7 +13,7 @@ dock {
     border-right: none;
 }
 
-dock:hover {
+Launcher:hover {
     border: solid 1px @highlight_color;
 }
 
