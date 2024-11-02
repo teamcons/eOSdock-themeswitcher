@@ -6,16 +6,11 @@ set -euo pipefail
 #========================
 #		VARIABLES		=
 #========================
-
-
 IMPORTFILE="Docktheme.css"
-
 
 #========================
 #		FUNCTIONS		=
 #========================
-
-
 # add an import to gtk.css so it can apply stuff
 function enable_theme()
 {
@@ -28,17 +23,12 @@ function enable_theme()
 	#killall io.elementary.dock
 }
 
-
-
-
 # Remove import in gtk config
 # Remove file to leave no leftover
 # dock restart
 function disable_theme()
 {
-
 	echo "removing import line in gtk.css."
-
 
 	# Cant seem to chain directly to itself
 	cat ~/.config/gtk-4.0/gtk.css \
@@ -54,29 +44,18 @@ function disable_theme()
 	#killall io.elementary.dock
 }
 
-
-
 #========================
 #		EXECUTION		=
 #========================
-
-
 if [[ -f "$*" ]] && [[ "$*" != "Default" ]]		# Its a file and not "Default" (reserve Default, just in case)
 then
-
 	echo "setting $*"
 	echo "/* CURRENT: $* */"	>  ~/.config/gtk-4.0/$IMPORTFILE
 	echo ""						>> ~/.config/gtk-4.0/$IMPORTFILE
 	cat "$*"					>> ~/.config/gtk-4.0/$IMPORTFILE
 	enable_theme
-
-
 else
 	disable_theme
-
-
-
 fi
-
 
 echo "you may want to log anew or run killall io.elementary.dock to see the changes take effect"
