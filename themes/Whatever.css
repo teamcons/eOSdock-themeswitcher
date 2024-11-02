@@ -4,9 +4,8 @@
  */
 
 dock {
-
-  padding-bottom:4px;
-  background:
+    padding-bottom:4px;
+    background:
     height: 200px;
     width: 500px;
     border: groove 1px #CCC;
@@ -18,27 +17,16 @@ dock:hover {
     border: solid 1px @highlight_color;
 }
 
-
 launcher {
     background: none;
     padding: 6px;
     padding-bottom: 0px;
 }
 
-
-
-
-
 .running-indicator {
     color: rgba(0,0,0,0);
     -gtk-icon-size: 9px;
     margin-top: -6px;
-    
-
     border-radius: 6px; 
-
     box-shadow: 0px 2px 2px alpha(@highlight_color, 0.6);
-
-    
-
 }
