@@ -42,6 +42,15 @@ https://github.com/elementary/dock/blob/main/data/Application.css
 Please if you have a cool theme send it to me
 
 
+Also i did another to set transparency
+```bash
+$ eOSdock-set-transparency.sh
+```
+
+Any integer between 0 and 100.
+Any other value just reset to default (60)
+
+
 ### THEMES
 
 Stellas Tweaks</br>
