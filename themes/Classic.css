@@ -16,3 +16,15 @@
         0 1px 2px alpha(black, 0.24);
     margin: 16px 0 0 0;
 }
+
+.running-indicator {
+    color: none;
+    -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.8);
+}
+
+launcher > .running-indicator {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,alpha(@accent_color,1) 100%);
+}
+
+
+
