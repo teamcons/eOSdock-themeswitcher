@@ -6,6 +6,7 @@ dock {
     border: groove 1px #CCC;
     border-bottom: none;
     border-right: none;
+    margin-bottom: 0px;
 }
 
 launcher {
@@ -22,6 +23,6 @@ launcher:hover .running-indicator {
 
 .running-indicator {
     color: @accent_color;
-    -gtk-icon-shadow: 0.5px 0.5px  2px #000000:
+    -gtk-icon-shadow: 1px 1px  2px #000000:
 }
 
