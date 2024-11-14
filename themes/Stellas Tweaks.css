@@ -4,7 +4,7 @@
  */
 
 launcher {
-    -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.5);
+    -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.8);
 }
 
 launcher:hover {
@@ -17,6 +17,6 @@ launcher:hover .running-indicator {
 
 .running-indicator {
     color: @accent_color;
-    -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.5);
+    -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.8);
 }
 
