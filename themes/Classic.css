@@ -24,4 +24,10 @@ launcher > .running-indicator {
 }
 
 
+launcher:hover {
+    margin-top: -9px;
+}
 
+launcher:hover .running-indicator {
+    margin-top: 6px;
+}
