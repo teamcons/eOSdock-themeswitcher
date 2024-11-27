@@ -16,15 +16,11 @@ dock {
 }
 
 .running-indicator {
-    color: alpha(black, 0);
+    color: alpha(@accent_color, 0);
     background: none;
     -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.8);
+    -gtk-icon-size: 10px;
 }
-
-launcher .running-indicator {
-      border-bottom: 3px solid @accent_color;
-}
-
 
 launcher:hover {
     margin-top: -9px;
