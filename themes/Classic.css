@@ -11,15 +11,18 @@ dock {
     margin-top: 0px ;
     margin: 0px;
     padding-bottom: none;
-    border-bottom: 8px solid alpha(@bg_color, 1);
+    border-bottom: 12px solid alpha(@bg_color, 1);
   
 }
 
 .running-indicator {
-    color: alpha(@accent_color, 0);
+    color: @accent_color;
     background: none;
     -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.8);
     -gtk-icon-size: 10px;
+    
+    padding-bottom: none;
+    margin-bottom: -12px;
 }
 
 launcher:hover {
@@ -27,5 +30,5 @@ launcher:hover {
 }
 
 launcher:hover .running-indicator {
-    margin-top: 6px;
+    margin-top: 9px;
 }
