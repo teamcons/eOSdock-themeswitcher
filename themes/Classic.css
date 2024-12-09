@@ -3,32 +3,48 @@
  * SPDX-FileCopyrightText: 2023 elementary, Inc. (https://elementary.io)
  */
  
+
+dock-window {
+    margin: 16px 0 0 0;
+    margin-bottom: -12px;
+    margin-top: 10px;
+}
+
 dock {
-    background: none;
-    border-radius: 0px;
-    border: 0px ;
-    box-shadow: 0px ;
-    margin-top: 0px ;
-    margin: 0px;
-    padding-bottom: none;
-    border-bottom: 12px solid alpha(@bg_color, 1);
-  
+    background: alpha(@bg_color,0.9);
+    margin-top: 38px;
+    margin-bottom: -12px;
+    
+    border-style: groove;
+    border-color: black;
+    border-width: 0.8px;
+    /*background: linear-gradient(to bottom, filter(@bg_color,0) 0%, alpha(@bg_color,0.9) 100%); 
+    */
+    
+}
+
+launcher {
+    transition: 0.5s;
+    filter: brightness(100%);
+    margin-bottom: 9px;
+}
+
+launcher:hover {
+    transition: 0.5s;
+    filter: brightness(140%);
+}
+
+launcher * {
+    filter: initial;
 }
 
 .running-indicator {
     color: @accent_color;
     background: none;
-    -gtk-icon-shadow: 1px 1px 1px alpha(black, 0.8);
-    -gtk-icon-size: 10px;
-    
     padding-bottom: none;
-    margin-bottom: -12px;
+    margin-bottom: -9px; 
 }
 
-launcher:hover {
-    margin-top: -9px;
-}
 
-launcher:hover .running-indicator {
-    margin-top: 9px;
-}
+    
+
