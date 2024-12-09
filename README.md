@@ -53,6 +53,11 @@ Any other value just reset to default (60)
 
 ### THEMES
 
+Classic</br>
+Attempt at mimicking the old Plank dock. It isnt complete, but damn good looking</br>
+<img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Classic.png"/>
+
+
 Stellas Tweaks</br>
 Shadows behind icons. Accent color in running indicator. Icon up on hover</br>
 <img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Stellas%20Tweaks.png"/>
