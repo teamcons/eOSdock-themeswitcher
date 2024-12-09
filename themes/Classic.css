@@ -11,7 +11,7 @@ dock-window {
 }
 
 dock {
-    background: alpha(@bg_color,0.9);
+    background: alpha(@bg_color,1);
     margin-top: 38px;
     margin-bottom: -12px;
     
@@ -22,7 +22,6 @@ dock {
     
     /*background: linear-gradient(to bottom, filter(@bg_color,0) 0%, alpha(@bg_color,0.9) 100%); 
     */
-    
 }
 
 launcher {
