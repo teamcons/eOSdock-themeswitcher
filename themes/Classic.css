@@ -22,7 +22,7 @@ dock {
     
     /*background: alpha(@bg_color,1);
     background: linear-gradient(to bottom, var(--color-lighter), var(--color-darker)));*/
-    background: linear-gradient(to bottom, shade( @bg_color, 1.60), shade( @bg_color, 0.40));
+    background: linear-gradient(to bottom, shade( @bg_color, 1.50), shade( @bg_color, 0.50));
 
 }
 
