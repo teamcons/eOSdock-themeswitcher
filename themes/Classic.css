@@ -27,7 +27,6 @@ launcher {
     transition: 0.5s;
     filter: brightness(100%);
     margin-bottom: 9px;
-    box-shadow: 0 4px 2px -2px gray;
 }
 
 launcher:hover {
