@@ -18,6 +18,8 @@ dock {
     border-style: groove;
     border-color: black;
     border-width: 0.8px;
+    border-bottom: none;
+    
     /*background: linear-gradient(to bottom, filter(@bg_color,0) 0%, alpha(@bg_color,0.9) 100%); 
     */
     
@@ -32,10 +34,6 @@ launcher {
 launcher:hover {
     transition: 0.5s;
     filter: brightness(140%);
-}
-
-launcher * {
-    filter: initial;
 }
 
 .running-indicator {
