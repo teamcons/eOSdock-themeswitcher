@@ -4,13 +4,6 @@
  */
  
 
-:root {
---color-lighter:    color-mix(in oklab, @bg_color, white 20%);
---color-darker:     color-mix(in oklab, @bg_color, black 20%);
-
-}
-
-
 dock-window {
     margin: 16px 0 0 0;
     margin-bottom: -12px;
@@ -27,8 +20,7 @@ dock {
     border-width: 0.8px;
     border-bottom: none;
     
-    /*
-        background: alpha(@bg_color,1);
+    /*background: alpha(@bg_color,1);
     background: linear-gradient(to bottom, var(--color-lighter), var(--color-darker)));*/
     background: linear-gradient(to bottom, shade( @bg_color, 1.75), shade( @bg_color, 0.25));
 
@@ -51,7 +43,3 @@ launcher:hover {
     padding-bottom: none;
     margin-bottom: -9px; 
 }
-
-
-    
-
