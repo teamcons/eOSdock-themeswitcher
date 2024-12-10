@@ -29,7 +29,8 @@ dock {
 launcher {
     transition: 0.5s;
     filter: brightness(100%);
-    margin-bottom: 9px;
+    margin-top: -38px;
+    margin-bottom: 18px;
 }
 
 launcher:hover {
@@ -41,5 +42,5 @@ launcher:hover {
     color: @accent_color;
     background: none;
     padding-bottom: none;
-    margin-bottom: -9px; 
+    margin-bottom: -16px; 
 }
