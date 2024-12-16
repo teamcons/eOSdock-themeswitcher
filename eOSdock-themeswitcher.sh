@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+#Note: set -euo pipefail causes the script to be unable to disable theme
 
 # Manage dock themes
 
@@ -14,11 +14,11 @@ IMPORTFILE="Docktheme.css"
 # add an import to gtk.css so it can apply stuff
 function enable_theme()
 {
-	if ! grep -q "@import $IMPORTFILE;" ~/.config/gtk-4.0/gtk.css
+	if ! grep -q "@import \"$IMPORTFILE\";" ~/.config/gtk-4.0/gtk.css
 	then
 		echo "import line not present in gtk.css. Adding."
 		echo '/* Import line for the eOS dock theme switcher. Comment for vanilla. */' >> ~/.config/gtk-4.0/gtk.css
-		echo "@import $IMPORTFILE;" >> ~/.config/gtk-4.0/gtk.css
+		echo "@import \"$IMPORTFILE\";" >> ~/.config/gtk-4.0/gtk.css
 	fi
 	#killall io.elementary.dock
 }
@@ -32,8 +32,8 @@ function disable_theme()
 
 	# Cant seem to chain directly to itself
 	cat ~/.config/gtk-4.0/gtk.css \
-		| grep -v  "@import $IMPORTFILE;" \
 		| grep -v "/* Import line for the eOS dock theme switcher." \
+		| grep -v  "@import \"$IMPORTFILE\";" \
 		> ~/.config/gtk-4.0/gtk1.css
 
 	# Use the temporary, then delete
@@ -47,8 +47,10 @@ function disable_theme()
 #========================
 #		EXECUTION		=
 #========================
+
 if [[ -f "$*" ]] && [[ "$*" != "Default" ]]		# Its a file and not "Default" (reserve Default, just in case)
 then
+
 	echo "setting $*"
 	echo "/* CURRENT: $* */"	>  ~/.config/gtk-4.0/$IMPORTFILE
 	echo ""						>> ~/.config/gtk-4.0/$IMPORTFILE
