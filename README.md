@@ -13,6 +13,14 @@ I am waiting for a change that would allow more flexibility for theming. Once it
 -Stellas Tweaks: An attempt at something good looking, with shadows and animations, without straying too far from default<br>
 -Princess Eyebleed: something flashy and pastelly and bright because why not<br>
 
+### I dont want all this i want the Classic plank theme !
+
+One-liner. Paste this in a terminal
+```bash
+wget -O - https://raw.githubusercontent.com/teamcons/eOSdock-themeswitcher/refs/heads/main/themes/Classic.css >> ~/.config/gtk-4.0/gtk.css && killall io.elementary.dock
+```
+
+
 ### Usage:
 
 To set theme.css as the current dock theme
