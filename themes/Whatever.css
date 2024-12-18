@@ -14,12 +14,14 @@ dock {
 
 Launcher:hover {
     border: solid 1px @highlight_color;
+    transition: 0.5s;
 }
 
 launcher {
     background: none;
     padding: 6px;
     padding-bottom: 0px;
+    transition: 0.5s;
 }
 
 .running-indicator {
