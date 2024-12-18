@@ -16,7 +16,7 @@ rm -f ~/.config/gtk-4.0/gtk1.css
 if [[ "$1" =~ ^-?[0-9]+$  ]] && (( 0 <= "$1" <= 100 )) ; then
     decimal=$(bc -l <<< "scale=2 ; $1 / 100")
       echo "Setting opacity override"
-      echo "dock{background: alpha(@bg_color,$decimal);}/\*Set by eOSdock-set-transparency\*/"	\ >>  ~/.config/gtk-4.0/gtk.css
+      echo "dock{opacity: alpha(@bg_color,$decimal);}/\*Set by eOSdock-set-transparency\*/"	\ >>  ~/.config/gtk-4.0/gtk.css
 fi
 
 # If the script does it, gala crashes
