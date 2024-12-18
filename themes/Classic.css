@@ -22,7 +22,7 @@ dock {
     
     /* Gradient from clear to dark. Barely noticeable */
     /*background: alpha(@bg_color,1);*/
-    background: linear-gradient(to bottom, shade( @bg_color, 1.10), shade( @bg_color, 0.70));
+    background: linear-gradient(to bottom, shade( @bg_color, 1.15), shade( @bg_color, 0.70));
 
 }
 
