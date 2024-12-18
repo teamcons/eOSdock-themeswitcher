@@ -10,6 +10,7 @@ Eventually i would like to do  the following themes:<br>
 -Aqua: A old nostalgic MacOS. However from playing with zoom-magnification, i wont be able to redo that<br>
 -Princess Eyebleed: something flashy and pastelly and bright because why not<br>
 
+======
 ### I dont want all this i want the Classic plank theme !
 
 One-liner. Paste this in a terminal
@@ -24,7 +25,7 @@ echo "dock {opacity: 1;}" >>  ~/.config/gtk-4.0/gtk.css && killall io.elementary
 ```
 
 
-
+======
 ### Usage:
 
 To set theme.css as the current dock theme
@@ -53,6 +54,7 @@ https://github.com/elementary/dock/blob/main/data/Application.css
 
 Feel free to submit pull requests with your themes. Im happy to host neat stuff
 
+======
 ### I just want to set the transparency
 Also i did another to set transparency. It overrides whatever value a theme may set if you call it afterward
 ```bash
@@ -71,7 +73,7 @@ echo "dock {opacity: 1;}" >>  ~/.config/gtk-4.0/gtk.css && killall io.elementary
 ```
 
 
-
+======
 ### THEMES
 
 Classic</br>
