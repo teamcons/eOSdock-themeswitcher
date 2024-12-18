@@ -16,8 +16,8 @@ dock {
     margin-bottom: -12px;
 
     /* Dark, then clear. That border is most of 3D effect */
-    outline: 1px solid shade( @bg_color, 0.60);
-    border: 1px solid shade( @bg_color, 1.60);
+    outline: 1px solid shade( @bg_color, 0.55);
+    border: 1px solid shade( @bg_color, 1.65);
     border-bottom: none;
     
     /* Gradient from clear to dark. Barely noticeable */
