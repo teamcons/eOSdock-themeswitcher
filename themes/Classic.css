@@ -17,13 +17,15 @@ dock {
 
     /* Dark, then clear. That border is most of 3D effect */
     outline: 1px solid shade( @bg_color, 0.45);
-    border: 1px solid shade( @bg_color, 1.65);
+    border: 1px solid shade( @bg_color, 1.75);
     border-bottom: none;
-    
+
     /* Gradient from clear to dark. Barely noticeable */
     /*background: alpha(@bg_color,1);*/
     background: linear-gradient(to bottom, shade( @bg_color, 1.15), shade( @bg_color, 0.75));
 
+    /* Comment this if you want to follow standard transparency */
+    opacity: 1;
 }
 
 /*Launcher*/
