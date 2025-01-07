@@ -1,0 +1,24 @@
+dock {
+  opacity: 1;
+  background-image: linear-gradient(to bottom, alpha(shade(@bg_color, 1.8), 0.3) 0%, alpha(shade(@bg_color,1.8), 0.3) 50%, transparent 50%, transparent 100%);
+  background-size: 4px 4px;
+  background-repeat: repeat;
+  background-color: alpha(@bg_color, 0.75);
+  border-radius: 0;
+  margin-top: 1px;
+  border: 1px solid alpha(@bg_color,0.5);
+  border-bottom: none;
+  box-shadow: 0;
+  margin-bottom: -9px;
+}
+
+.running-indicator {
+  -gtk-icon-size: 0px;
+  padding-bottom: 6px;
+  background-image: linear-gradient(to bottom right, transparent 0%, transparent 50%, @text_color 50%, @text_color 100%);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(0px, 6px) rotate(-135deg);
+  margin-bottom: -5px;
+}
