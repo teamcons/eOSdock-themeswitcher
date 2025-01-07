@@ -91,3 +91,6 @@ Whatever</br>
 I dont know. It looks neat.</br>
 <img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Whatever.png"/>
 
+Pinstripes - By <a href="https://github.com/t3rminus" target="_blank">t3rminus</a></br>
+Lots of lines, similar to early Mac OS X</br>
+<img src="https://github.com/teamcons/eOSdock-themeswitcher/blob/main/assets/Pinstripes.png"/>
