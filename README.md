@@ -2,8 +2,6 @@
 <div align="center">
   <h1 align="center">eOSdock-themeswitcher</h1>
   <h3 align="center">Theming for the dock of elementary OS 8 and beyond</h3>
-
-  <span align="center"> <img class="center" src="https://github.com/ellie-commons/jorts/blob/main/data/shot.png" alt="Screenshot of Elly's sticky note as an example"></span>
 </div>
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
